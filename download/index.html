@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenXMW 下载</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-3 flex flex-col items-center">
+    <h1 class="text-4xl font-bold">
+      OpenXMW 下载
+    </h1>
+    <div id="down-main" class="mt-5 p-3 md:w-2/3 w-full rounded-xl border shadow">
+      <div data-dist="示例作品.sb3" class="mb-2 p-2 shadow border rounded cursor-pointer">
+        示例作品.sb3
+      </div>
+      <div data-dist="openxmw-pyc_1.0.0.zip" class="mb-2 p-2 shadow border rounded cursor-pointer">
+        openxmw-pyc_1.0.0.zip
+      </div>
+      <div data-dist="openxmw-pyc_1.0.1.zip" class="mb-2 p-2 shadow border rounded cursor-pointer">
+        openxmw-pyc_1.0.1.zip
+      </div>
+      <div data-dist="openxmw-pyc_1.0.2.zip" class="mb-2 p-2 shadow border rounded cursor-pointer">
+        openxmw-pyc_1.0.2.zip
+      </div>
+      <div data-dist="openxmw-pyc_1.0.3.zip" class="mb-2 p-2 shadow border rounded cursor-pointer">
+        openxmw-pyc_1.0.3.zip
+      </div>
+      <div data-dist="openxmw-pyc_1.0.4.zip" class="mb-2 p-2 shadow border rounded cursor-pointer">
+        openxmw-pyc_1.0.4.zip
+      </div>
+      <div data-dist="openxmw-pyc_1.0.5.zip" class="mb-2 p-2 shadow border rounded cursor-pointer">
+        openxmw-pyc_1.0.5.zip
+      </div>
+      <div data-dist="openxmw-pyc_1.1.0.zip" class="mb-2 p-2 shadow border rounded cursor-pointer">
+        openxmw-pyc_1.1.0.zip
+      </div>
+      <div data-dist="openxmw-pyc_1.1.1.zip" class="mb-2 p-2 shadow border rounded cursor-pointer">
+        openxmw-pyc_1.1.1.zip
+      </div>
+      <div data-dist="openxmw-pyc_1.1.2.zip" class="mb-2 p-2 shadow border rounded cursor-pointer">
+        openxmw-pyc_1.1.2.zip
+      </div>
+      <div data-dist="openxmw-pyc_1.1.3.zip" class="mb-2 p-2 shadow border rounded cursor-pointer">
+        openxmw-pyc_1.1.3.zip
+      </div>
+      <div data-dist="openxmw-pyc_1.2.0.zip" class="mb-2 p-2 shadow border rounded cursor-pointer">
+        openxmw-pyc_1.2.0.zip
+      </div>
+      <div data-dist="openxmw-pyc_1.2.1.zip" class="mb-2 p-2 shadow border rounded cursor-pointer">
+        openxmw-pyc_1.2.1.zip
+      </div>
+    </div>
+    <script>
+      const divElements = document.querySelectorAll('div[data-dist]');
+      divElements.forEach((div) => {
+        div.addEventListener('click', () => {
+          const dist = div.getAttribute('data-dist');
+          const url = `/download/dist/${dist}`;
+          window.location.href = url;
+        });
+      });
+    </script>
+  </body>
+</html>
